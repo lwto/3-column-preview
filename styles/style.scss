@@ -21,9 +21,9 @@ body{
     align-items: center;
 }
 .card-container{
-    width:80%;
+    width: 100%;
     max-width: 700px;
-    padding: 3rem 0;
+    padding: 3rem 2rem;
     display:flex;
     flex-direction: column;
     justify-content: center;
@@ -42,7 +42,7 @@ body{
         }
         p{
             color:$text-color;
-            padding-bottom:1.5rem;
+            padding-bottom:3rem;
             line-height: 1.3rem;
             font-weight: 200;
         }
