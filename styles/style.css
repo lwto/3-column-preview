@@ -56,6 +56,7 @@ body {
   border-radius: 4rem;
   background-color: #f2f2f2;
   width: fit-content;
+  cursor: pointer;
 }
 
 .card-container .card:first-child {
@@ -67,12 +68,24 @@ body {
   color: #e38826;
 }
 
+.card-container .card:first-child .btn:hover {
+  background-color: #e38826;
+  color: #f2f2f2;
+  border: 1px solid #f2f2f2;
+}
+
 .card-container .card:nth-child(2) {
   background-color: #006970;
 }
 
 .card-container .card:nth-child(2) .btn {
   color: #006970;
+}
+
+.card-container .card:nth-child(2) .btn:hover {
+  background-color: #006970;
+  color: #f2f2f2;
+  border: 1px solid #f2f2f2;
 }
 
 .card-container .card:last-child {
@@ -82,6 +95,12 @@ body {
 
 .card-container .card:last-child .btn {
   color: #004241;
+}
+
+.card-container .card:last-child .btn:hover {
+  background-color: #004241;
+  color: #f2f2f2;
+  border: 1px solid #f2f2f2;
 }
 
 .attribution {

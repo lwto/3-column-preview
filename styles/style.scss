@@ -51,6 +51,8 @@ body{
             border-radius: 4rem;
             background-color: $first-color;
             width:fit-content;
+            cursor: pointer;
+            
         }
     }
     .card:first-child{
@@ -58,12 +60,22 @@ body{
         border-radius: 10px 10px 0 0;
         .btn{
             color:$card1-color;
+            &:hover{
+                background-color: $card1-color;
+                color:$first-color;
+                border:1px solid $first-color;
+            }
         }
     }
     .card:nth-child(2){
         background-color: $card2-color;
         .btn{
             color:$card2-color;
+            &:hover{
+                background-color: $card2-color;
+                color:$first-color;
+                border:1px solid $first-color;
+            }
         }
     }
     .card:last-child{
@@ -71,6 +83,11 @@ body{
         border-radius: 0 0 10px 10px;
         .btn{
             color:$card3-color;
+            &:hover{
+                background-color: $card3-color;
+                color:$first-color;
+                border:1px solid $first-color;
+            }
         }
     }
 }
@@ -101,3 +118,4 @@ body{
         }
     }
 }
+
