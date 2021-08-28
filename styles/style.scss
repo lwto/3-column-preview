@@ -2,7 +2,102 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
 
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
 body{
-    font-family: 'Lexend Deca', sans-serif; //400
-    font-family: 'Big Shoulders Display', cursive; //700
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 13px;
+    
+}
+.wrapper{
+    background-color: $first-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.card-container{
+    width:80%;
+    max-width: 700px;
+    padding: 3rem 0;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    .card{
+        padding:2rem;
+        img{
+            width:50px;
+        }
+        h1{
+            font-family: 'Big Shoulders Display', cursive;
+            color:$first-color;
+            margin:1rem 0;
+            letter-spacing: 1px;
+        }
+        p{
+            color:$text-color;
+            padding-bottom:1.5rem;
+            line-height: 1.3rem;
+            font-weight: 200;
+        }
+        .btn{
+            padding:.65rem 1.25rem;
+            border-radius: 4rem;
+            background-color: $first-color;
+            width:fit-content;
+        }
+    }
+    .card:first-child{
+        background-color: $card1-color;
+        border-radius: 10px 10px 0 0;
+        .btn{
+            color:$card1-color;
+        }
+    }
+    .card:nth-child(2){
+        background-color: $card2-color;
+        .btn{
+            color:$card2-color;
+        }
+    }
+    .card:last-child{
+        background-color: $card3-color;
+        border-radius: 0 0 10px 10px;
+        .btn{
+            color:$card3-color;
+        }
+    }
+}
+.attribution{
+    padding:6px;
+    font-size: 10px;
+    a{
+        text-decoration: none;
+        color:$card3-color;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .wrapper{
+        width: 100vw;
+        height: 100vh;
+    }
+    .card-container{
+        flex-direction: row;
+        .card{
+            height:100%;
+        }
+        .card:first-child{
+            border-radius: 10px 0 0 10px;
+        }
+        .card:last-child{
+            border-radius: 0 10px 10px 0;
+        }
+    }
 }
